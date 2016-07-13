@@ -1,0 +1,8 @@
+#!/bin/bash
+
+pip2 install -r requirements.txt 
+cp bin/megatron /usr/local/bin/
+chmod +x /usr/local/bin/megatron
+mkdir $HOME/.megatron
+cp conf/megatron.conf $HOME/.megatron/megatron.conf
+echo "SUCCESSFULLY INSTALLED!"

@@ -1,0 +1,1 @@
+include requirements.txt README.md LICENSE INSTALL bin/megatron libs/create_datasource.py libs/create_dashboard.py libs/get_es_metadata.py libs/autobots.py RELEASE-NOTES THANKS VERSION docs/WIKI.md

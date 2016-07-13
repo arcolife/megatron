@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+
+import logging
+from time import ctime
+from lib.autobots import *
+from lib.minibots import *
+
+logger = logging.getLogger(__name__)
+
+
+def view_mapping():
+    """
+    List all available fields
+    """
+    return _MAPPINGS
+
+def convert(_TARGETS, _FROM, _UNTIL, _FORMAT, maxDataPoints=10):
+    # FIXME: limit count to 10 for now. Remove constraint
+    # once caching and other optimization techniques are
+    # included, so that ES instance doesn't get bombarded
+    # every time maxDataPoints goes above 1000 or something
+
+    _COUNT=10
+    # _TARGETS = target
+    # _FROM = _from
+    # _UNTIL = until
+    # _FORMAT = format
+    # _COUNT = maxDataPoints
+    return QueryFormatter.render_metrics(_TARGETS, _FROM, _UNTIL, _COUNT)
+
+    
+def metrics_find(self):
+    """ 
+    Query for metric names, for templates and drop down list selection 
+    """
+    return QueryFormatter.find_metrics(query)
+
+    
+def dashboard_find(self):
+    """ 
+    Query for metric names, for templates and drop down list selection 
+    """
+    return QueryFormatter.json.dumps(resp)
+
