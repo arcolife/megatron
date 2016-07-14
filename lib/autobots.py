@@ -14,21 +14,21 @@ def flatten_list(L):
     return v
 
 
-Class LoadDatabase(object):
+class LoadDatabase(object):
     """
     """
     def __init__(self):
         pass
 
 
-Class JsonConvertor(object):
+class JsonConvertor(object):
     """
     """
     def __init__(self):
         pass
 
     
-Class QueryConvertor(object):
+class QueryConvertor(object):
     """
     """
     def __init__(self):
